@@ -12,6 +12,7 @@ public class MainActivityMain extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_main);
+
           /*
          Find the View that shows the numbers category as same as xml
          objectDataType  variableName = new
@@ -48,8 +49,9 @@ public class MainActivityMain extends AppCompatActivity {
                 startActivity(azizMarkaIntent);
             }
         });
-          /*
-         Find the View that shows the numbers category as same as xml
+
+        /*
+        * Find the View that shows the numbers category as same as xml
          objectDataType  variableName = new
         */
         ImageView cairokyBand = (ImageView) findViewById(R.id.cairoky);
@@ -66,8 +68,9 @@ public class MainActivityMain extends AppCompatActivity {
                 startActivity(cairokyBandIntent);
             }
         });
-          /*
-         Find the View that shows the numbers category as same as xml
+
+         /*
+         *Find the View that shows the numbers category as same as xml
          objectDataType  variableName = new
         */
         ImageView elmorabaa = (ImageView) findViewById(R.id.elmorabaa);
@@ -84,8 +87,9 @@ public class MainActivityMain extends AppCompatActivity {
                 startActivity(elmorabaaIntent);
             }
         });
-          /*
-         Find the View that shows the numbers category as same as xml
+
+        /*
+         *Find the View that shows the numbers category as same as xml
          objectDataType  variableName = new
         */
         ImageView hamzaNamera = (ImageView) findViewById(R.id.hamza);
@@ -102,8 +106,9 @@ public class MainActivityMain extends AppCompatActivity {
                 startActivity(hamzaIntent);
             }
         });
-         /*
-         Find the View that shows the numbers category as same as xml
+
+        /*
+         *Find the View that shows the numbers category as same as xml
          objectDataType  variableName = new
         */
         ImageView masarEgbary = (ImageView) findViewById(R.id.masar);

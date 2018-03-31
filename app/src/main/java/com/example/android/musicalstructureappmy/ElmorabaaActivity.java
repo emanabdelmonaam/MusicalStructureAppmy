@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
-
 import java.util.ArrayList;
 
 public class ElmorabaaActivity extends AppCompatActivity {
@@ -12,7 +11,6 @@ public class ElmorabaaActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.song_list);
-
 
         // Create an ArrayList of AndroidFlavor objects
         ArrayList<BandSong> bandsSongs = new ArrayList<BandSong>();

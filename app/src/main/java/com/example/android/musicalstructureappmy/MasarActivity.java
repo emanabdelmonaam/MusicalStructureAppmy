@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
-
 import java.util.ArrayList;
 
 public class MasarActivity extends AppCompatActivity {
@@ -12,7 +11,6 @@ public class MasarActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.song_list);
-
 
         // Create an ArrayList of AndroidFlavor objects
         ArrayList<BandSong> bandsSongs = new ArrayList<BandSong>();
@@ -33,7 +31,6 @@ public class MasarActivity extends AppCompatActivity {
         bandsSongs.add(new BandSong("انا موجود",  "2013", R.drawable.playclipart ));
         bandsSongs.add(new BandSong("شتا",  "2013", R.drawable.playclipart ));
         bandsSongs.add(new BandSong("شيروفوبيا",  "2016", R.drawable.playclipart ));
-
 
         BandSongAdapter songAdapter = new BandSongAdapter(this,bandsSongs);
         ListView listView = (ListView)findViewById(R.id.song);

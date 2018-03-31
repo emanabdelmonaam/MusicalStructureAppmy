@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 
 /**
@@ -52,8 +51,9 @@ public class BandSongAdapter extends ArrayAdapter<BandSong> {
         // set the image to iconView
         iconYear.setText(currentBandSong.getIconYear());
 
-        // Return the whole list item layout
-        // so that it can be shown in the ListView
+        /** Return the whole list item layout
+        * so that it can be shown in the ListView
+        */
         return listSongName;
     }
 }
