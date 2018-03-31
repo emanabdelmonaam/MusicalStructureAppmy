@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingCon">20dp</dimen>
+    <dimen name="marginCon">20dp</dimen>
+    <dimen name="marginTopText">60dp</dimen>
+    <dimen name="marginTopLeft">15dp</dimen>
+    <dimen name="marginTopRight">15dp</dimen>
+    <dimen name="marginBottMain">25dp</dimen>
+    <dimen name="textSize">30sp</dimen>
+    <dimen name="imageBandSize">150dp</dimen>
+    <dimen name="paddingNext">10dp</dimen>
+</resources>
