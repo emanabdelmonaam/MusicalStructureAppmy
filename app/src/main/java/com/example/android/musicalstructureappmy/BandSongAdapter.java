@@ -1,11 +1,13 @@
 package com.example.android.musicalstructureappmy;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import java.util.ArrayList;
 
@@ -15,7 +17,7 @@ import java.util.ArrayList;
 
 public class BandSongAdapter extends ArrayAdapter<BandSong> {
 
-  //  private static final String LOG_TAG = BandSongAdapter.class.getSimpleName();
+    //  private static final String LOG_TAG = BandSongAdapter.class.getSimpleName();
 
     public BandSongAdapter(Activity context, ArrayList<BandSong> bandSongs) {
 
@@ -39,21 +41,23 @@ public class BandSongAdapter extends ArrayAdapter<BandSong> {
         // set this text on the name TextView
         nameTextView.setText(currentBandSong.getSongName());
 
-        // Find the ImageView in the list_item.xml layout with the ID list_item_icon
-        ImageView iconPlay = (ImageView) listSongName.findViewById(R.id.icon_play);
-
-        // set the image to iconView
-        iconPlay.setImageResource(currentBandSong.getmIconPlay());
-
-        // Find the ImageView in the list_item.xml layout with the ID list_item_icon
+        // Find the year in the list_item.xml layout with the ID list_item_icon
         TextView iconYear = (TextView) listSongName.findViewById(R.id.song_year);
 
-        // set the image to iconView
+        // set the year to iconView
         iconYear.setText(currentBandSong.getIconYear());
 
+        // Find the song in the list_item.xml layout with the ID list_item_icon
+        ImageView iconPlay = (ImageView) listSongName.findViewById(R.id.icon_play);
+
+        // set the song to iconView
+        iconPlay.setImageResource(currentBandSong.getmIconPlay());
+
         /** Return the whole list item layout
-        * so that it can be shown in the ListView
-        */
+         * so that it can be shown in the ListView
+         */
         return listSongName;
+
     }
+
 }

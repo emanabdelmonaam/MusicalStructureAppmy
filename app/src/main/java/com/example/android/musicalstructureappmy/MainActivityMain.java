@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.SearchView;
 
 public class MainActivityMain extends AppCompatActivity {
 
@@ -31,6 +32,7 @@ public class MainActivityMain extends AppCompatActivity {
                 startActivity(autostrad);
             }
         });
+
           /*
          Find the View that shows the numbers category as same as xml
          objectDataType  variableName = new

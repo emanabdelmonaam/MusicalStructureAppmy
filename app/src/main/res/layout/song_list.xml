@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".AzizMarkaActivity"
+    android:background="@color/backGroundB"
     android:padding="16dp"
     android:id="@+id/song">
 </ListView>

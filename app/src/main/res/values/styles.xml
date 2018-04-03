@@ -27,24 +27,24 @@
         <item name="android:layout_width">wrap_content</item>
     </style>
     <style name="Layout_list_Two">
-    <item name="android:layout_width">wrap_content</item>
-    <item name="android:layout_height">wrap_content</item>
-    <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
     </style>
     <style name="ImagePlay">
         <item name="android:layout_width">@dimen/main_icon_play_height</item>
         <item name="android:layout_height">@dimen/main_icon_play_height</item>
     </style>
     <style name="MainBo">
-    <item name="android:layout_width">wrap_content</item>
-    <item name="android:layout_height">wrap_content</item>
-    <item name="android:layout_marginBottom">@dimen/marginBottMain</item>
-    <item name="android:text">@string/bott_next</item>
-    <item name="android:textSize">@dimen/textSize</item>
-    <item name="android:padding">@dimen/paddingNext</item>
-    <item name="android:textAllCaps">true</item>
-    <item name="android:textColor">@color/colorWaite</item>
-    <item name="android:background">@color/backGroundB</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/marginBottMain</item>
+        <item name="android:text">@string/bott_next</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:padding">@dimen/paddingNext</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorWaite</item>
+        <item name="android:background">@color/backGroundB</item>
     </style>
     <style name="ScrollViewMain">
         <item name="android:layout_width">match_parent</item>

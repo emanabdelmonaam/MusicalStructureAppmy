@@ -2,9 +2,9 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/MainA">
-<ImageView
-    style="@style/SearchView"
-    android:background="@drawable/maxresdefault"/>
+    <ImageView
+        style="@style/SearchView"
+        android:background="@drawable/pexelunder"/>
     <Button
         style="@style/MainBo"
         app:layout_constraintBottom_toBottomOf="parent"

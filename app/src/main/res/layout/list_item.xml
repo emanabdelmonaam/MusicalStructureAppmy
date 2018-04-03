@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_weight="1"
+    android:background="@color/colorWaite"
     style="@style/Song_list"
     android:baselineAligned="false">
     <LinearLayout
