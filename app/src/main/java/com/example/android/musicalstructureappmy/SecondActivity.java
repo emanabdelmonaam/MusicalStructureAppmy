@@ -5,14 +5,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.SearchView;
 
-public class MainActivityMain extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_main);
+        setContentView(R.layout.activity_second);
 
           /*
          Find the View that shows the numbers category as same as xml
@@ -26,7 +25,7 @@ public class MainActivityMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent autostrad = new Intent(MainActivityMain.this, AutostratActivity.class);
+                Intent autostrad = new Intent(SecondActivity.this, AutostratActivity.class);
 
                 // Start the new activity
                 startActivity(autostrad);
@@ -45,7 +44,7 @@ public class MainActivityMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent azizMarkaIntent = new Intent(MainActivityMain.this, AzizMarkaActivity.class);
+                Intent azizMarkaIntent = new Intent(SecondActivity.this, AzizMarkaActivity.class);
 
                 // Start the new activity
                 startActivity(azizMarkaIntent);
@@ -64,7 +63,7 @@ public class MainActivityMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent cairokyBandIntent = new Intent(MainActivityMain.this, CairokyBandActivity.class);
+                Intent cairokyBandIntent = new Intent(SecondActivity.this, CairokyBandActivity.class);
 
                 // Start the new activity
                 startActivity(cairokyBandIntent);
@@ -83,7 +82,7 @@ public class MainActivityMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent elmorabaaIntent = new Intent(MainActivityMain.this, ElmorabaaActivity.class);
+                Intent elmorabaaIntent = new Intent(SecondActivity.this, ElmorabaaActivity.class);
 
                 // Start the new activity
                 startActivity(elmorabaaIntent);
@@ -102,7 +101,7 @@ public class MainActivityMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent hamzaIntent = new Intent(MainActivityMain.this, HamzaActivity.class);
+                Intent hamzaIntent = new Intent(SecondActivity.this, HamzaActivity.class);
 
                 // Start the new activity
                 startActivity(hamzaIntent);
@@ -121,7 +120,7 @@ public class MainActivityMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent masarEgbaryIntent = new Intent(MainActivityMain.this, MasarActivity.class);
+                Intent masarEgbaryIntent = new Intent(SecondActivity.this, MasarActivity.class);
 
                 // Start the new activity
                 startActivity(masarEgbaryIntent);

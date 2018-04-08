@@ -36,6 +36,7 @@ public class ElmorabaaActivity extends AppCompatActivity {
         BandSongAdapter songAdapter = new BandSongAdapter(this,bandsSongs);
         ListView listView = (ListView)findViewById(R.id.song);
         listView.setAdapter(songAdapter);
+
         listView.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

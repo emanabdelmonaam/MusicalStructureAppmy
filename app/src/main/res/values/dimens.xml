@@ -7,8 +7,11 @@
     <dimen name="marginTopRight">15dp</dimen>
     <dimen name="marginBottMain">5dp</dimen>
     <dimen name="textSize">30sp</dimen>
+    <dimen name="textSize2">27sp</dimen>
+    <dimen name="andriod_text_hight">20sp</dimen>
     <dimen name="imageBandSize">150dp</dimen>
     <dimen name="paddingNext">20dp</dimen>
     <dimen name="linar_width">0dp</dimen>
     <dimen name="main_icon_play_height">50dp</dimen>
+    <dimen name="tex_main_padding">170dp</dimen>
 </resources>

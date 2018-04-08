@@ -10,10 +10,10 @@ public class BandSong {
      * the song name */
     private String mSongName;
 
-    /** the song Photo*/
+    /** the song Year*/
     private String mIconYear;
 
-    /** the photo song*/
+    /** the play Icon*/
     private int mIconPlay;
 
     /** the play song*/
@@ -23,24 +23,24 @@ public class BandSong {
      * and has three variable name*/
     public  BandSong(String vSongName, String vIconYear, int vIconPlay, int vListenSong){
         //inset this variable there are two stats
-        mSongName =vSongName;
+        mSongName = vSongName;
         mIconYear =vIconYear;
         mIconPlay =vIconPlay;
         mListenSong =vListenSong;
 
     }
 
-    // get Song Name method of the word.
+     // get Song Name method of the word.
     public String getSongName(){
         return mSongName;
     }
 
-    // get Icon year method of the word.
+     // get Icon Play method of the word.
     public String getIconYear(){
         return mIconYear;
     }
 
-    //get the Icon photo method of the word.
+     //get the Icon Stop method of the word.
     public int getmIconPlay(){
         return mIconPlay;
     }

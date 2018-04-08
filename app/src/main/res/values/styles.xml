@@ -38,13 +38,13 @@
     <style name="MainBo">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">@dimen/marginBottMain</item>
         <item name="android:text">@string/bott_next</item>
-        <item name="android:textSize">@dimen/textSize</item>
-        <item name="android:padding">@dimen/paddingNext</item>
+        <item name="android:textSize">@dimen/textSize2</item>
         <item name="android:textAllCaps">true</item>
+        <item name="android:paddingLeft">@dimen/marginTopRight</item>
+        <item name="android:paddingRight">@dimen/marginTopRight</item>
+        <item name="android:paddingBottom">@dimen/main_icon_play_height</item>
         <item name="android:textColor">@color/colorWaite</item>
-        <item name="android:background">@color/backGroundB</item>
     </style>
     <style name="ScrollViewMain">
         <item name="android:layout_width">match_parent</item>
