@@ -1,5 +1,6 @@
 package com.example.android.musicalstructureappmy;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,7 +10,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import java.util.ArrayList;
 import android.widget.AdapterView.OnItemClickListener;
-
 
 public class ElmorabaaActivity extends AppCompatActivity {
 
@@ -23,14 +23,14 @@ public class ElmorabaaActivity extends AppCompatActivity {
 
         // Create an ArrayList of bandSong objects
         final ArrayList<BandSong> bandsSongs = new ArrayList<BandSong>();
-        bandsSongs.add(new BandSong("أغنيك", "2013", R.drawable.playclipart, R.raw.elmaganek));
-        bandsSongs.add(new BandSong("تحت الأرض",  "2016", R.drawable.playclipart, R.raw.elmtahtelard));
-        bandsSongs.add(new BandSong("حد تاني", "2011", R.drawable.playclipart, R.raw.elmhadtany));
-        bandsSongs.add(new BandSong("ليكون",  "2013", R.drawable.playclipart, R.raw.elmlaikon2));
-        bandsSongs.add(new BandSong("يا زين",  "2013", R.drawable.playclipart, R.raw.elmyazain));
-        bandsSongs.add(new BandSong("ما عندك خبر",  "2013", R.drawable.playclipart, R.raw.elmmaandekkabar));;
-        bandsSongs.add(new BandSong("المختلفين",  "2018", R.drawable.playclipart, R.raw.elmelmoktalfen));
-        bandsSongs.add(new BandSong("ترويج",  "2013", R.drawable.playclipart, R.raw.elmlaikon));
+        bandsSongs.add(new BandSong("أغنيك", "2013", R.drawable.elmorabbaa, R.raw.elmaganek));
+        bandsSongs.add(new BandSong("تحت الأرض",  "2016", R.drawable.elmorabbaa, R.raw.elmtahtelard));
+        bandsSongs.add(new BandSong("حد تاني", "2011", R.drawable.elmorabbaa, R.raw.elmhadtany));
+        bandsSongs.add(new BandSong("ليكون",  "2013", R.drawable.elmorabbaa, R.raw.elmlaikon2));
+        bandsSongs.add(new BandSong("يا زين",  "2013", R.drawable.elmorabbaa, R.raw.elmyazain));
+        bandsSongs.add(new BandSong("ما عندك خبر",  "2013", R.drawable.elmorabbaa, R.raw.elmmaandekkabar));;
+        bandsSongs.add(new BandSong("المختلفين",  "2018", R.drawable.elmorabbaa, R.raw.elmelmoktalfen));
+        bandsSongs.add(new BandSong("ترويج",  "2013", R.drawable.elmorabbaa, R.raw.elmlaikon));
 
         //set the BandSongAdapter with listView ID and the arrayList.
         BandSongAdapter songAdapter = new BandSongAdapter(this,bandsSongs);
@@ -42,7 +42,8 @@ public class ElmorabaaActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 BandSong play = bandsSongs.get(position);
-
+                Intent autost = new Intent(ElmorabaaActivity.this, ListenToSong.class);
+                startActivity(autost);
                 // play song from arrayList
 
                 if (currentPosition != position) {
@@ -63,14 +64,5 @@ public class ElmorabaaActivity extends AppCompatActivity {
 
             }
         });
-    }
-
-    // stop song when  activity is close.
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (mlisten != null) {
-            mlisten.stop();
-        }
     }
 }

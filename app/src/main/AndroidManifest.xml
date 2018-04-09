@@ -35,5 +35,8 @@
         <activity
             android:name=".ElmorabaaActivity"
             android:label="@string/category_Elmorabb3" />
+        <activity
+            android:name=".ListenToSong"
+            android:label="@string/listenToSong" />
     </application>
 </manifest>

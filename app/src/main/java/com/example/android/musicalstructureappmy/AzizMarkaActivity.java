@@ -1,5 +1,6 @@
 package com.example.android.musicalstructureappmy;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,7 +10,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import java.util.ArrayList;
 import android.widget.AdapterView.OnItemClickListener;
-
 
 public class AzizMarkaActivity extends AppCompatActivity {
 
@@ -50,6 +50,8 @@ public class AzizMarkaActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 BandSong play = bandsSongs.get(position);
+                Intent autost = new Intent(AzizMarkaActivity.this, ListenToSong.class);
+                startActivity(autost);
 
                 // play song from arrayList
 
@@ -71,14 +73,5 @@ public class AzizMarkaActivity extends AppCompatActivity {
 
             }
         });
-    }
-
-    // stop song when  activity is close.
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (mlisten != null) {
-            mlisten.stop();
-        }
     }
 }

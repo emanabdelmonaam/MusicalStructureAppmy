@@ -126,4 +126,23 @@
         <item name="android:layout_marginBottom">@dimen/marginCon</item>
         <item name="android:background">@drawable/masar2</item>
     </style>
+    <style name="sekeebar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/paddingCon</item>
+        <item name="android:layout_marginTop">@dimen/marginTopLeft</item>
+        <item name="android:layout_marginBottom">@dimen/size_play_and_stop</item>
+    </style>
+    <style name="playBut">
+        <item name="android:layout_width">@dimen/size_play_and_stop</item>
+        <item name="android:layout_height">@dimen/size_play_and_stop</item>
+        <item name="android:background">@drawable/playclipart</item>
+        <item name="android:layout_marginRight">@dimen/size_play_and_stop</item>
+    </style>
+    <style name="stopBut">
+        <item name="android:layout_width">@dimen/size_play_and_stop</item>
+        <item name="android:layout_height">@dimen/size_play_and_stop</item>
+        <item name="android:background">@drawable/stopbutton</item>
+        <item name="android:layout_marginRight">@dimen/size_play_and_stop</item>
+    </style>
 </resources>

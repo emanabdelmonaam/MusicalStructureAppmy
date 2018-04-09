@@ -1,5 +1,6 @@
 package com.example.android.musicalstructureappmy;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -46,6 +47,8 @@ public class AutostratActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 BandSong play = bandsSongs.get(position);
+                Intent autost = new Intent(AutostratActivity.this, ListenToSong.class);
+                startActivity(autost);
 
                 // play song from arrayList
 
@@ -64,17 +67,7 @@ public class AutostratActivity extends AppCompatActivity {
                 // start media player when i chose a song.
                 mlisten = MediaPlayer.create(AutostratActivity.this, play.getmListenSong());
                 mlisten.start();
-
             }
         });
-    }
-
-    // stop song when  activity is close.
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (mlisten != null) {
-            mlisten.stop();
-        }
     }
 }

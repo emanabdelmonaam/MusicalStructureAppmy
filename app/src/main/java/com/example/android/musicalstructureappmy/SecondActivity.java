@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class SecondActivity extends AppCompatActivity {
@@ -17,7 +18,7 @@ public class SecondActivity extends AppCompatActivity {
          Find the View that shows the numbers category as same as xml
          objectDataType  variableName = new
         */
-        ImageView autostrad = (ImageView) findViewById(R.id.autos);
+        ImageButton autostrad = (ImageButton) findViewById(R.id.autos);
 
         // Set a click listener on that View
         autostrad.setOnClickListener(new View.OnClickListener() {
@@ -36,7 +37,7 @@ public class SecondActivity extends AppCompatActivity {
          Find the View that shows the numbers category as same as xml
          objectDataType  variableName = new
         */
-        ImageView azizMarka = (ImageView) findViewById(R.id.aziz);
+        ImageButton azizMarka = (ImageButton) findViewById(R.id.aziz);
 
         // Set a click listener on that View
         azizMarka.setOnClickListener(new View.OnClickListener() {
@@ -55,7 +56,7 @@ public class SecondActivity extends AppCompatActivity {
         * Find the View that shows the numbers category as same as xml
          objectDataType  variableName = new
         */
-        ImageView cairokyBand = (ImageView) findViewById(R.id.cairoky);
+        ImageButton cairokyBand = (ImageButton) findViewById(R.id.cairoky);
 
         // Set a click listener on that View
         cairokyBand.setOnClickListener(new View.OnClickListener() {
@@ -74,7 +75,7 @@ public class SecondActivity extends AppCompatActivity {
          *Find the View that shows the numbers category as same as xml
          objectDataType  variableName = new
         */
-        ImageView elmorabaa = (ImageView) findViewById(R.id.elmorabaa);
+        ImageButton elmorabaa = (ImageButton) findViewById(R.id.elmorabaa);
 
         // Set a click listener on that View
         elmorabaa.setOnClickListener(new View.OnClickListener() {
@@ -93,7 +94,7 @@ public class SecondActivity extends AppCompatActivity {
          *Find the View that shows the numbers category as same as xml
          objectDataType  variableName = new
         */
-        ImageView hamzaNamera = (ImageView) findViewById(R.id.hamza);
+        ImageButton hamzaNamera = (ImageButton) findViewById(R.id.hamza);
 
         // Set a click listener on that View
         hamzaNamera.setOnClickListener(new View.OnClickListener() {
@@ -112,7 +113,7 @@ public class SecondActivity extends AppCompatActivity {
          *Find the View that shows the numbers category as same as xml
          objectDataType  variableName = new
         */
-        ImageView masarEgbary = (ImageView) findViewById(R.id.masar);
+        ImageButton masarEgbary = (ImageButton) findViewById(R.id.masar);
 
         // Set a click listener on that View
         masarEgbary.setOnClickListener(new View.OnClickListener() {

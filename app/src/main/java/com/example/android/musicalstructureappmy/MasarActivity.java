@@ -1,5 +1,6 @@
 package com.example.android.musicalstructureappmy;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -51,7 +52,8 @@ import android.widget.AdapterView.OnItemClickListener;
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 BandSong play = bandsSongs.get(position);
-
+                Intent autost = new Intent(MasarActivity.this, ListenToSong.class);
+                startActivity(autost);
                 // play song from arrayList
 
                 if (currentPosition != position) {
@@ -72,14 +74,5 @@ import android.widget.AdapterView.OnItemClickListener;
 
             }
         });
-    }
-
-    // stop song when  activity is close.
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (mlisten != null) {
-            mlisten.stop();
-        }
     }
 }

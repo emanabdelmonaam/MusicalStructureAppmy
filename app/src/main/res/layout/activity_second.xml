@@ -14,30 +14,30 @@
             style="@style/TextViewMainn"
             android:textAlignment="center"
             app:layout_constraintTop_toTopOf="parent"/>
-        <ImageView
+        <ImageButton
             android:id="@+id/autos"
             style="@style/CategoryAutos"
             app:layout_constraintTop_toBottomOf="@+id/textView"/>
-        <ImageView
+        <ImageButton
             android:id="@+id/aziz"
             style="@style/CategoryAziz"
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:layout_constraintLeft_toRightOf="@+id/autos"/>
-        <ImageView
+        <ImageButton
             android:id="@+id/cairoky"
             style="@style/CategoryCairoc"
             app:layout_constraintTop_toBottomOf="@+id/autos"/>
-        <ImageView
+        <ImageButton
             android:id="@+id/elmorabaa"
             style="@style/CategoryElmorab3"
             app:layout_constraintTop_toBottomOf="@id/aziz"
             app:layout_constraintEnd_toEndOf="@id/aziz"/>
-        <ImageView
+        <ImageButton
             android:id="@+id/hamza"
             style="@style/CategoryHamza"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cairoky"/>
-        <ImageView
+        <ImageButton
             android:id="@+id/masar"
             style="@style/CategoryMasar"
             app:layout_constraintBottom_toBottomOf="parent"
